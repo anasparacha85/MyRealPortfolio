@@ -15,3 +15,29 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
 }
+
+@keyframes borderrr {
+    0%{
+        border-radius: 35% 65% 49% 51% / 73% 23% 77% 27%;
+        border:7px solid grey
+    }
+    40%{
+        border-radius:  35% 65% 49% 51% / 89% 14% 86% 11%;
+        border:7px solid grey
+    }
+    70%{
+        border-radius: 67% 33% 49% 51% / 89% 60% 40% 11%;
+        border:7px solid red
+    }
+    100%{
+        border-radius: 35% 65% 49% 51% / 73% 23% 77% 27%;
+        border:7px solid grey
+    }
+    
+}
+.bord{
+    animation-name: borderrr;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+}

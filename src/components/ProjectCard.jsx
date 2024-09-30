@@ -4,14 +4,14 @@ const ProjectCard = ({ title, description, techStack, liveLink, githubLink }) =>
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-900  transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl card">
       <div className="px-6 py-4">
-        <div className="font-bold text-xl text-gray-400 mb-2">{title}</div>
-        <p className="text-gray-100 text-base">{description}</p>
+        <div className="font-bold lg:text-xl sm:text-[10px] text-gray-400 mb-2">{title}</div>
+        <p className="text-gray-100 lg:text-base sm:text-[7px]">{description}</p>
       </div>
       <div className="px-6 pt-4 pb-2">
         {techStack.map((tech, index) => (
           <span
             key={index}
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            className="inline-block bg-gray-200 rounded-full px-3 py-1 lg:text-sm sm:text-[8px] font-semibold text-gray-700 mr-2 mb-2"
           >
             {tech}
           </span>
@@ -22,7 +22,7 @@ const ProjectCard = ({ title, description, techStack, liveLink, githubLink }) =>
           href={liveLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-red-600 hover:underline"
+          className="text-red-600 hover:underline lg:text-sm sm:text-[8px]"
         >
           Live Demo
         </a>
@@ -30,7 +30,7 @@ const ProjectCard = ({ title, description, techStack, liveLink, githubLink }) =>
           href={githubLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-red-600 hover:underline"
+          className="text-red-600 hover:underline lg:text-sm sm:text-[8px]"
         >
           GitHub
         </a>
