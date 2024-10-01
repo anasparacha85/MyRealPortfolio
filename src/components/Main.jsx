@@ -80,7 +80,7 @@ const Main = () => {
       <div className="lg:w-[47vw]  h-screen relative ">
      
         <div className="lg:h-32 lg:w-32 sm:h-16 sm:w-16 bg-red-700 rounded-full  lg:ml-[400px] lg:-mt-[90px] sm:-mt-[53px]  sm:ml-[180px] lg:left-[300px]"></div>
-        <div className="lg:h-[350px] lg:w-[350px] sm:w-[230px] sm:h-[230px] bg-red-600 rounded-full absolute -top-[20px] left-[60px] flex items-center justify-center">
+        <div className="lg:h-[350px] lg:w-[350px] sm:w-[230px] sm:h-[230px] bg-red-600 rounded-full absolute -top-[20px] sm:left-[60px] lg:left-[170px] flex items-center justify-center">
           <img
             src={mypicture}
             alt="Profile"
@@ -89,7 +89,7 @@ const Main = () => {
         </div>
       </div>
     </div>
-    <div className="sm:mt-[400px] lg:mt-auto">
+    <div className="sm:mt-[280px] lg:mt-auto">
     <Footer/>
     </div>
    
