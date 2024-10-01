@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="footbar bg-black text-white h-1/2  lg:w-full sm:w-[500px]">
+    <div className="footbar bg-black text-white h-1/2  lg:w-full sm:w-[500px] ">
       <div className="h33 text-center text-whitesmoke py-6 ">
         <h3 className="underline lg:text-sm sm:text-[9px]">My Home Address</h3>
         <h3 className='lg:text-sm sm:text-[9px]'>A-536 Block I North Nazimabad, Karachi</h3>
@@ -17,7 +17,7 @@ const Footer = () => {
              { `${isActive ? 'underline text-indigo-400' : 'underline '} lg:text-sm sm:text-[9px]`}
             }
           >
-            Amiranas761@gmail.com
+            amiranas761@gmail.com
           </NavLink>
         </span>
         <span className="contact font-bold lg:text-sm sm:text-[9px]">

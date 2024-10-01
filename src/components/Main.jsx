@@ -30,10 +30,10 @@ const Main = () => {
     <Head/>
      <div className="flex justify-between h-[470px] w-[98vw] mt-[100px]">
       {/* Profile Info Section */}
-      <div className="lg:w-[47vw] sm:w-[61vw]  h-screen">
+      <div className="lg:w-[47vw] sm:w-[200px]  h-screen">
         
         <div className="p-10">
-          <div className="lg:text-3xl font-bold text-white sm:text-lg sm:w-[200px] lg:w-auto lg:h-[150px]">
+          <div className="lg:text-3xl font-bold text-white sm:text-lg sm:w-[200px] lg:w-auto lg:h-[150px] sm:h-[80px]">
             Hi, I'm{" "}
             <span className="font-cursive font-bold" id="bold">
               Anas Paracha
@@ -77,10 +77,10 @@ const Main = () => {
 
       {/* Profile Picture Section */}
      
-      <div className="lg:w-[47vw] sm:w-[41vw] h-screen relative">
+      <div className="lg:w-[47vw]  h-screen relative ">
      
-        <div className="lg:h-32 lg:w-32 sm:h-16 sm:w-16 bg-red-700 rounded-full  lg:ml-[400px] lg:-mt-[90px] sm:-mt-[53px]  sm:ml-[300px] lg:left-[300px]"></div>
-        <div className="lg:h-[350px] lg:w-[350px] sm:w-[230px] sm:h-[230px] bg-red-600 rounded-full absolute -top-[20px] left-[170px] flex items-center justify-center">
+        <div className="lg:h-32 lg:w-32 sm:h-16 sm:w-16 bg-red-700 rounded-full  lg:ml-[400px] lg:-mt-[90px] sm:-mt-[53px]  sm:ml-[180px] lg:left-[300px]"></div>
+        <div className="lg:h-[350px] lg:w-[350px] sm:w-[230px] sm:h-[230px] bg-red-600 rounded-full absolute -top-[20px] left-[60px] flex items-center justify-center">
           <img
             src={mypicture}
             alt="Profile"
@@ -89,7 +89,10 @@ const Main = () => {
         </div>
       </div>
     </div>
+    <div className="sm:mt-[400px] lg:mt-auto">
     <Footer/>
+    </div>
+   
     </>
    
   );
