@@ -6,29 +6,45 @@ import inst2 from '../../public/inst2.jpg'
 import lin from '../../public/lin.png'
 import Header from "./Header";
 import Footer from "./Footer";
+import Typed from 'typed.js';
+import Head from "./Head";
+import Foot from "./Foot";
 
 
 const Main = () => {
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Web Developer', 'Front End React Developer','Basic Nodejs Developer ','Basic Express js developer','WordPress Developer','Javascript Expert','Java programming expert','Microsoft Office Exxpert','DataBase Management (SQL,MySQL,MongoDB)','Front End React Developer'],
+      typeSpeed: 50,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   return (
     <>
-    <Header/>
+    <Head/>
      <div className="flex justify-between h-[470px] w-[98vw] mt-[100px]">
       {/* Profile Info Section */}
       <div className="lg:w-[47vw] sm:w-[61vw]  h-screen">
         
         <div className="p-10">
-          <div className="lg:text-3xl font-bold text-white sm:text-lg sm:w-[200px] lg:w-auto">
+          <div className="lg:text-3xl font-bold text-white sm:text-lg sm:w-[200px] lg:w-auto lg:h-[150px]">
             Hi, I'm{" "}
             <span className="font-cursive font-bold" id="bold">
               Anas Paracha
             </span>{" "}
             and I'm A{" "}
-            <span className="text-red-600 lg:text-4xl sm:text-xl" id="element">
-Front-End React Developer
+            <span ref={el} className="text-red-600 lg:text-4xl sm:text-xl" id="element">
+
             </span>
           </div>
         </div>
-        <div className="lg:text-xs text-white font-sans pl-10 sm:text-[7px] ">
+        <div className="lg:text-xs text-white font-sans pl-10 sm:text-[7px]  ">
           <p>
             A boy who is currently doing a Bachelor of Software Engineering from
             Sir Syed University of Engineering and Technology, wants to succeed

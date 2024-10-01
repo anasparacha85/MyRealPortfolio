@@ -3,7 +3,7 @@ import './components.css'
 import skills from '../../public/skills.jpg'
 import Header from "./Header";
 import Footer from "./Footer";
-
+import Head from "./Head";
 const skillsData = {
   frontend: ['React', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS'],
   backend: ['Node.js Basic', 'Express Basic', 'MongoDB'],
@@ -13,7 +13,7 @@ const skillsData = {
 const Skills = () => {
   return (
     <>
-    <Header/>
+    <Head/>
      <div className="flex justify-between h-[370px] w-[98vw] mt-[100px]">
       {/* Profile Info Section */}
       <div className="w-[47vw] h-screen">

@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard';
 import Header from './Header';
 import Footer from './Footer';
 import projectsss from '../../public/projectsss.jpg'
+import Head from "./Head";
 
 
 const projectsData = [
@@ -34,7 +35,7 @@ const projectsData = [
 const Project = () => {
   return (
     <>
-    <Header/>
+    <Head/>
       <div className="flex justify-between h-[370px] w-[98vw] mt-[100px]">
       {/* Profile Info Section */}
       <div className="w-[47vw] h-screen">

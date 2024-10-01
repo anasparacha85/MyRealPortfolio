@@ -4,11 +4,12 @@ import Header from "./Header";
 import Footer from "./Footer";
 import aboutpic from '../../public/aboutpic.jpeg'
 import mypicture from '../../public/mypicture.jpeg'
+import Head from "./Head";
 
 const About = () => {
   return (
     <>
-    <Header/>
+    <Head/>
     <div className="flex justify-between h-[370px] w-[98vw] mt-[100px]">
       {/* Profile Info Section */}
       <div className="w-[47vw] h-screen">
